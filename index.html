@@ -3,86 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header
-      style="
-        font-size: 20px;
-        font-weight: bolder;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      "
-    >
-      <nav
-        style="
-          display: flex;
-          justify-content: space-between;
-          padding-left: 15px;
-          padding-right: 15px;
-        "
-      >
-        <img
-          style="width: 150px"
-          src="/Users/meganmarson/Pictures/Magic_8_ball_logo.webp"
-          alt="Magic 8 Ball Logo"
-        />
-        <a href="https://en.wikipedia.org/wiki/Magic_8_Ball">About</a>
-      </nav>
+    <header>
+      <h1>Magic 8 Ball</h1>
     </header>
-    <br />
-    <br />
-
+    <h2>Ask a question and reveal your fate!</h2>
     <main>
-      <h1 style="display: flex; justify-content: center">
-        Shake Up Your Fate With Magic 8
-      </h1>
-      <p style="display: flex; justify-content: center; font-size: 16px">
-        Enter Your Question Below
-      </p>
-      <br />
-      <br />
-
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        "
-      >
-        <img
-          style="width: fit-content; height: fit-content"
-          src="https://magic-8ball.com/wp-content/uploads/ball-300x300.png"
-          alt="Magic 8 Ball"
-        />
-      </div>
-      <br />
-      <br />
-      <div style="display: flex; flex-direction: row; justify-content: center">
+      <form id="myForm">
         <input
-          style="
-            padding: 15px;
-            margin: 30px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-          "
           type="text"
-          placeholder="Enter Question Here"
+          name="enterQuestion"
+          placeholder="Type your question here..."
+          required
         />
-      </div>
+        <button type="submit">Ask the 8 Ball</button>
+      </form>
     </main>
-    <footer>
-      <p
-        style="
-          display: flex;
-          justify-content: center;
-          padding: 30px;
-          margin: 30px;
-        "
-      >
-        Created By: Megan Marson
-      </p>
-    </footer>
+    <img
+      src="https://magic-8ball.com/wp-content/uploads/ball.webp"
+      id="8Ball"
+      alt="Magic 8 Ball"
+    />
+    <section id="answerBox"></section>
+
+    <script src="scripts.js"></script>
   </body>
 </html>

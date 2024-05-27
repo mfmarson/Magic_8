@@ -1,0 +1,117 @@
+body {
+  background: radial-gradient(rgb(57, 33, 125) 0%, rgb(139, 102, 241) 100%);
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Luckiest Guy";
+  font-size: 90px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 15px;
+  text-shadow: 6px 6px #4ebeea;
+}
+h2 {
+  font-family: "Bitter";
+  font-size: 20px;
+  color: white;
+  text-shadow: -0.5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+#myForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type="text"] {
+  font-family: "Bitter";
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 300px;
+  box-shadow: 0px 0px 3px 3px #fff;
+}
+
+button {
+  font-family: "Bitter";
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 25px;
+  box-shadow: 0 0 10px white;
+}
+
+button:hover {
+  background-color: white;
+  color: hsla(0, 1%, 15%, 0.905);
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+img {
+  width: 370px;
+  height: 370px;
+}
+
+#answerBox {
+  font-family: "Bitter";
+  font-size: 30px;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
